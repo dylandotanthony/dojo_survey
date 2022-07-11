@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="bg-dark text-light justify-center col-4 mx-auto">
+        <div class=" display-2 text-center">
+            <h1 >Dojo Survey</h1>
+        </div>
+    <br>
+        <!-- flex justify-center col-4 my-5  text-center mx-auto -->
+        
+        <form action="/process" method="POST" target="_self">
+            <div class=" mx-3">
+                <div class="input-group mx-auto" >
+                    <span class="input-group-text" id="inputGroup-sizing-default">Name:</span>
+                    <!-- <label for="name" class="form-label">Name:</label> -->
+                    <input type="text" class="form-control"    name="name" id="name" placeholder="Name...">
+                </div>
+
+            </div>
+            <br>
+            <div class="mx-auto">
+                <label class="mx-2">Dojo Location:</label>
+                <div class="form-check">
+                    <input class="form-check-input mx-3" type="radio" name="location" value="Bellevue,WA">
+                    <label class="form-check-label" for="Location">Bellevue,WA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input mx-3" type="radio" name="location" value="Los Angeles,CA">
+                    <label class="form-check-label" for="Location">Los Angeles,CA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input mx-3" type="radio" name="location" value="Silicon Valley,CA">
+                    <label class="form-check-label" for="Location">Silicon Valley,CA</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input mx-3" type="radio" name="location" value="Online - Worldwide">
+                    <label class="form-check-label" for="Location">Online - Worldwide</label>
+                </div>
+            </div>
+
+                    <!-- <label for="Bellevue,WA">
+                        <input class="mx-3" type="radio"  name="location">
+                        Bellevue,WA
+                    </label> -->
+
+                    <!-- <label for="Los Angeles,CA">
+                        <input class="mx-3" type="radio" name="location">
+                        Los Angeles,CA
+                    </label> -->
+                    <!-- <label for="Silicon Valley,CA">
+                        <input class="mx-3" type="radio"  name="location">
+                        Silicon Valley,CA
+                    </label> -->
+                    <!-- <label for="Online - Worldwide">
+                        <input class="mx-3" type="radio" name="location">
+                        Online - Worldwide
+                    </label> -->
+            
+                <div class="mx-auto">
+                    <label class="mx-2">What is your Favorite Language(s):</label>
+                    <div class="form-check">
+                        <input class="form-check-input mx-3" type="checkbox" name="favlang" value="HTML">
+                        <label class="form-check-label" for="favlang1" value="HTML">HTML</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input mx-3" type="checkbox" name="favlang" value="CSS">
+                        <label class="form-check-label" for="favlang2">CSS</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input mx-3" type="checkbox" name="favlang" value="JavaScript">
+                        <label class="form-check-label" for="favlang3">JavaScript</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input mx-3" type="checkbox" name="favlang"  value="Python">
+                        <label class="form-check-label" for="favlang4">Python</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input mx-3" type="checkbox" name="favlang" value="MySQL">
+                        <label class="form-check-label" for="favlang5">MySQL</label>
+                    </div>
+                </div>
+
+            <div class="row mx-3">
+                <label for="comments" class="form-label">Comments:</label>
+                <textarea class="form-control align-middle"   name="comments" id="comments" placeholder="Comments..." rows="4" ></textarea>
+            </div>
+            <div class="d-grid gap-2 mx-3 p-2 my-3">
+                <input class=" text-light btn btn-primary" type="submit" value="Submit">
+            </div>
+            <br>
+        </form>
+    </div>  
+</body>
+</html>
